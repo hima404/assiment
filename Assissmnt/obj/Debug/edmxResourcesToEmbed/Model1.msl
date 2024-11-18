@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="employeModelStoreContainer" CdmEntityContainer="employeEntities2">
+    <EntitySetMapping Name="Tasks">
+      <EntityTypeMapping TypeName="employeModel.Tasks">
+        <MappingFragment StoreEntitySet="Tasks">
+          <ScalarProperty Name="taskid" ColumnName="taskid" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="useridd" ColumnName="useridd" />
+          <ScalarProperty Name="descr" ColumnName="descr" />
+          <ScalarProperty Name="statuss" ColumnName="statuss" />
+          <ScalarProperty Name="duedate" ColumnName="duedate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="users">
+      <EntityTypeMapping TypeName="employeModel.users">
+        <MappingFragment StoreEntitySet="users">
+          <ScalarProperty Name="userid" ColumnName="userid" />
+          <ScalarProperty Name="names" ColumnName="names" />
+          <ScalarProperty Name="passwordd" ColumnName="passwordd" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="rolee" ColumnName="rolee" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
